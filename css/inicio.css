@@ -1,0 +1,466 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Animación de entrada*/
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#hero h1{
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s; /* Retraso de 0.3 segundos antes de que comience la animación */
+}
+
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Inicio header */
+
+header {
+  background-color:  rgb(114, 55, 15);
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-top: 5px solid transparent;
+  
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2em;
+}
+
+header li {
+  margin: 0 10px;
+  transition: all 500ms ease;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.logo img {
+  max-height: 5em;
+  padding: 2em;
+}
+
+.left-link{
+  float: right;
+}
+
+
+
+/*Animación*/
+
+li:hover{
+ font-size: 20px;
+ transition: all 500ms ease;
+  
+}
+
+ul :hover{
+ color: rgb(214,214,160);
+}
+
+
+  /* Fin header */
+
+  /* Inicio Hero */
+
+  #hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../Images/mueble\ de\ cocina\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+
+  #hero h1{
+     font-size: 500%;
+     
+  }
+
+  /* Fin Hero */
+
+  /* Inicio Quienes Somos */
+  #somos .container{
+    text-align: center;
+    padding: 130px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+
+#somos .texto{
+    width: 50%;
+    text-align: initial;
+    max-width: 600px;
+    padding-left: 30px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos h2{
+    padding-top: 55px;
+    margin-top: 0px;
+    font-size: 60px;
+}
+
+#somos p{
+    font-size: 30px;;
+    text-align: justify;
+    font-size: 25px;
+}
+
+#somos .imagenQuienesSomos{
+    background-image:url("../Images/mueble\ de\ baño\ 4.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+}
+
+.colour{
+    color: rgb(114, 55, 15);
+}
+
+/*Fin Quienes Somos*/
+
+/* Inicio Identidad */
+#identidad .container{
+  text-align: center;
+  padding: 130px 15px;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: linear-gradient(
+    0deg,
+    rgba(214, 212, 160, 0.5),
+    rgba(214, 212, 160, 0.5))
+}
+
+#identidad .texto{
+  width: 50%;
+  text-align: start;
+  max-width: 600px;
+  padding-top: 40px;
+  padding-left: 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#identidad h2{
+  margin-top: 0px;
+  font-size: 60px;
+}
+
+#identidad p{
+  font-size: 30px;;
+  text-align: justify;
+  font-size: 25px; 
+
+}
+
+#identidad .imagenIdentidad{
+  background-image:url("../Images/puerta\ 4.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 550px;
+  width: 550px;
+}
+
+/*Fin Identidad */
+
+/*Inicio Resumen Productos */
+
+/*Configuración del título */
+.tituloResumenProductos{
+  align-items: center;
+  display: initial;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-direction: column;
+  
+}
+
+.tituloResumenProductos h2{
+  font-size: 60px;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  padding-top: 80px;
+  font-weight: bold;
+}
+
+
+.Slogan{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 40px;
+  font-size: 25px;
+  
+}
+
+
+label{
+  cursor: pointer;
+  color: white;
+}
+
+.ContainerCenter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+input{
+  display: none
+}
+
+.Carrusels{
+  height: 500px;
+  width: 800px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.Carrusel{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  overflow-y: hidden;
+  transition: all .5s ease;
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+.Carrusel p{
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center center;
+  padding-top: 20%;
+  font-weight: bold;
+}
+
+/* Estado 1 */
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(200%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(4) {transform: translate(300%, 0);}
+/* Estado 2 */
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(100%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(4) {transform: translate(200%, 0);}
+/* Estado 3 */
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(0%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(4) {transform: translate(100%, 0);}
+
+/* Estado 4 */
+#Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-300%, 0);}
+#Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-200%, 0);}
+#Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(-100%, 0);}
+#Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(4) {transform: translate(0%, 0);}
+
+/* Flechas */
+.Carrusels .ArrowLeft, .Carrusels .ArrowRight{
+  position: absolute;
+  height: 100%;
+  width: 2em;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  user-select: none;
+  font-size: 70px;
+}
+
+.Carrusels .ArrowLeft{left: 0px;}
+.Carrusels .ArrowRight{right: 0px;}
+
+#Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
+#Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
+#Slider3:checked ~ .Carrusels .Arrow3{display: flex;}
+#Slider4:checked ~ .Carrusels .Arrow4{display: flex;}
+
+/* Selectores */
+.Selectors {
+  width: 60px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.Selectors .Selector {
+  background-color: #555252;
+  height: 10px;
+  width: 10px;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Condicionales para botón inferior */
+#Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {background-color: #999999;}
+#Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {background-color: #999999;}
+#Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {background-color: #999999;}
+#Slider4:checked ~ .Selectors .Selector:nth-of-type(4) {background-color: #999999;}
+
+
+
+
+/*Fin Resumen Productos */
+
+
+
+
+  /* Inicio Footer */
+  footer {
+    background-color: #8B4513; /* Color marrón */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+   }
+
+   footer .containerFooter{
+    text-align: start;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+
+   footer .containerFooter a{
+    color: white;
+   }
+
+   .card .contenido{
+    width: fit-content;
+    height: fit-content;
+    background-color:  rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    border: none;
+    margin-top: 30px;
+  
+  }
+
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+
+  /* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+/*Facebook*/
+.containerTwo:hover {
+  background-color: #1877F2;
+  transition-duration: .3s;
+}
+
+/*Correo*/
+.containerThree:hover {
+  background-color: #b31111;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 35px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+footer .copyright{
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 20px;
+}
+
+  /* Fin Footer */
