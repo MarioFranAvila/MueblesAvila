@@ -1,0 +1,424 @@
+/*Inicio historia*/
+
+/*Animación de entrada*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#historia{
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Retraso de 0.5 segundos antes de que comience la animación */
+}
+
+/*Style*/
+#historia .container
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+
+
+#historia .imagenHistoria{
+    background-image:url("../Images/imagenHistoria.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 500px;
+}
+
+
+#historia .texto{
+    width: 50%;
+}
+
+#historia h2{
+    margin: 0;
+    font-size: 60px;
+}
+
+#historia p{
+    font-size: 30px;;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.colour{
+    color: rgb(114, 55, 15);
+}
+
+/*Fin historia*/
+
+
+
+
+/*Inicio Misión y Visión*/
+.ContainerCenter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    background-image: linear-gradient(
+    0deg,
+    rgba(214, 212, 160, 0.5),
+    rgba(214, 212, 160, 0.5))
+  }
+
+  .ContainerCenter h2{
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+  
+  input{
+    display: none
+  }
+  
+  .Carrusels{
+    height: 500px;
+    width: 800px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  
+  .Carrusel{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    overflow-y: hidden;
+    transition: all .5s ease;
+    background-size: cover; 
+    background-position: center; 
+  }
+
+
+  .Carrusel h4{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .Carrusel p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+    
+
+
+  /* Estado 1 */
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
+/* Estado 2 */
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
+
+
+
+/* Flechas */
+.Carrusels .ArrowLeft, .Carrusels .ArrowRight{
+  position: absolute;
+  height: 100%;
+  width: 0.5em;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  user-select: none;
+  font-size: 50px;
+  color: white;
+}
+
+.Carrusels .ArrowLeft{left: 0px;}
+.Carrusels .ArrowRight{right: 0px;}
+
+#Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
+#Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
+
+/* Selectores */
+.Selectors {
+  width: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.Selectors .Selector {
+  background-color: #555252;
+  height: 10px;
+  width: 10px;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Condicionales para botón inferior */
+#Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {background-color: #999999;}
+#Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {background-color: #999999;}
+
+
+/*Fin Misión y Visión*/
+
+
+/*Inicio Valores*/
+#valores {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../Images/pilaDeMadera1.jpg);
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+}
+
+#valores .titulo{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#valores .contenedorValores{
+display: flex;
+color: white;
+justify-content: space-evenly;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 0 15px;
+}
+
+.contenedorValores{
+    padding: 0px 15px 20px 15px;
+
+}
+
+
+.valor{
+    position: relative;
+   
+    padding: 40px 20px; 
+    margin: 20px 20px 100px 20px;   
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+}
+
+
+
+.iconoValor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* entre el icono y el H5 */
+}
+
+
+.valor h5{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+
+.contenedorValores p{
+    text-align: center;
+    padding-top: 0x;
+    margin: 0;
+}
+
+
+/*Fin Valores*/
+
+/*Inicio Experiencia*/
+#Experiencia .titulo h2{
+    justify-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    padding-top: 1em;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#Experiencia .productos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-bottom: 3em;
+}
+
+
+.producto{
+    width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 3em;
+}
+
+
+/*Estilo para el último elemento del section de experiencia*/
+.last-item {
+    grid-column: 1 / -1; /* Ocupa todas las columnas*/
+    justify-self: center; 
+    margin-top: 3em;
+}
+
+.producto .image-container {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.producto .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease;
+}
+
+.producto::after{ /*after como pseudo para el borde*/
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid rgb(255,255,255);
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4 ease;
+}
+
+.producto:hover img{
+    filter: grayscale(1) brightness(0.4); /*ESCALA DE GRISES Y BRILLO AL 40%*/
+}
+
+.producto:hover::after{ /*En el hover hacer visible al borde*/
+    opacity: 1;
+    inset: 20px; /*Espacio entre el borde de .producto y el borde del efecto*/
+}
+
+.content{
+    width: 80%; 
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    opacity: 0; /*No visible3*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Aplicar junto con el top y left para centrar el elemento*/
+    transition: opacity 0.5s ease;
+}
+
+.producto:hover .content{
+    opacity: 1;
+}
+
+
+
+/*Fin Experiencia*/
+
+/*Inicio Reseñas*/
+#reseñas .titulo h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    padding-top: 0;
+    display: inline-block; 
+    position: relative; 
+}
+
+#reseñas .titulo {
+    text-align: center;
+    margin-bottom: 2em; /*espacio entre el título y la línea */
+}
+
+#reseñas .titulo h2::after {
+    content: ""; 
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+    width: 100%;
+    height: 8px; 
+    background-color:  rgb(114, 55, 15);
+}
+
+#reseñas .testimonios{
+    margin-top: 5em;
+       display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin-bottom: 5em;
+}
+
+.testimonio-card {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.3));
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 360px;
+    text-align: center;
+    
+  }
+
+  .rating { /*Estrallas*/
+    color: gold;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .cliente-foto {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+
+  .cliente-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+   .cliente-nombre {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .testimonio-texto {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+/*Fin reseñas*/
