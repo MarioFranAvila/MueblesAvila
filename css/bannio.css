@@ -1,0 +1,119 @@
+.colour{
+    color: rgb(114, 55, 15);
+}
+
+
+/*Animación de entrada*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main{
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Retraso de 0.3 segundos antes de que comience la animación */
+}
+
+ main h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*Section Product-Card*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-bottom: 2em;
+    gap: calc(20% - 10px);;
+    justify-content: center;
+}
+
+.Product-card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 5em;
+  }
+
+
+  .Product-card .card-landing{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000);
+    background-position: center;
+    background-size: cover;
+    z-index: 100; /*Colocar el landing por delante*/
+  }
+
+  .Product-card .card-landing h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+  }
+
+  .Product-card .card-info{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    z-index: 90;/*poner detras del Product-card*/
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+  }
+
+  .Product-card:hover .card-info{ /*Desplegar info 10% a su izquierda*/
+    left: 100%;
+  }
+
+  .card-info .head{
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(59, 82, 73); /*línea del head*/
+  }
+
+  .card-info .head .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  .card-info .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(114, 55, 15);
+    text-align:start;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-info .content .list{
+    padding: 10px 15px;
+  }
+
+  .card-info .content .list li{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
