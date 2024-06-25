@@ -1,0 +1,526 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Animación de entrada*/
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+main{
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s; /* Retraso de 0.3 segundos antes de que comience la animación */
+}
+
+.color{
+    color: rgb(114, 55, 15);
+}
+
+h3{
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    font-size: 3em;
+}
+
+/* Cartas de muebles */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-bottom: 6em;
+    gap: calc(20% - 10px);
+    justify-content: center;
+}
+
+.container p{
+    font-size: 12px;
+}
+
+/* Carta producto 1 */
+.card-producto{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 6em;
+  }
+  
+  .card-producto .card-landing{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+  }
+  
+  .card-producto .card-landing h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .card-producto .card-info{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+  }
+  
+  .card-producto:hover .card-info{
+    left: 100%;
+  }
+  
+  .card-info .head{
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(0, 0, 0);
+  }
+  
+  .card-info .head .title{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  
+  .card-info .title{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(114, 55, 15);;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-info .content .list{
+    padding: 10px 15px;
+  }
+  
+  .card-info .content .list li{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Carta producto 2 */
+  .card-producto2{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 6em;
+  }
+  
+  .card-producto2 .card-landing2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+  }
+  
+  .card-producto2 .card-landing2 h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .card-producto2 .card-info2{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+  }
+  
+  .card-producto2:hover .card-info2{
+    left: 100%;
+  }
+  
+  .card-info2 .head2{
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(0, 0, 0);
+  }
+  
+  .card-info2 .head2 .title2{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  
+  .card-info2 .title2{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(114, 55, 15);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-info2 .content2 .list2{
+    padding: 10px 15px;
+  }
+  
+  .card-info2 .content2 .list2 li{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Carta producto 3 */
+  .card-producto3{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 6em;
+  }
+  
+  .card-producto3 .card-landing3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+  }
+  
+  .card-producto3 .card-landing3 h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .card-producto3 .card-info3{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+  }
+  
+  .card-producto3:hover .card-info3{
+    left: 100%;
+  }
+  
+  .card-info3 .head3{
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(0, 0, 0);
+  }
+  
+  .card-info3 .head3 .title3{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  
+  .card-info3 .title3{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(114, 55, 15);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-info3 .content3 .list3{
+    padding: 10px 15px;
+  }
+  
+  .card-info3 .content3 .list3 li{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Carta producto 4 */
+  .card-producto4{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 6em;
+  }
+  
+  .card-producto4 .card-landing4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+  }
+  
+  .card-producto4 .card-landing4 h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .card-producto4 .card-info4{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+  }
+  
+  .card-producto4:hover .card-info4{
+    left: 100%;
+  }
+  
+  .card-info4 .head4{
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(0, 0, 0);
+  }
+  
+  .card-info4 .head4 .title4{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  
+  .card-info4 .title4{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(114, 55, 15);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-info4 .content4 .list4{
+    padding: 10px 15px;
+  }
+  
+  .card-info4 .content4 .list4 li{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Carta producto 5 */
+  .card-producto5{
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .card-producto5 .card-landing5{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+  }
+  
+  .card-producto5 .card-landing5 h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .card-producto5 .card-info5{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+  }
+  
+  .card-producto5:hover .card-info5{
+    left: 100%;
+  }
+  
+  .card-info5 .head5{
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(0, 0, 0);
+  }
+  
+  .card-info5 .head5 .title5{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  
+  .card-info5 .title5{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(114, 55, 15);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-info5 .content5 .list5{
+    padding: 10px 15px;
+  }
+  
+  .card-info5 .content5 .list5 li{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(59, 82, 73);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Carta producto 6 */
+  .card-producto6{
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .card-producto6 .card-landing6{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+  }
+  
+  .card-producto6 .card-landing6 h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .card-producto6 .card-info6{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+  }
+  
+  .card-producto6:hover .card-info6{
+    left: 100%;
+  }
+  
+  .card-info6 .head6{
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(0, 0, 0);
+  }
+  
+  .card-info6 .head6 .title6{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  
+  .card-info6 .title6{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(114, 55, 15);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-info6 .content6 .list6{
+    padding: 10px 15px;
+  }
+  
+  .card-info6 .content6 .list6 li{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
