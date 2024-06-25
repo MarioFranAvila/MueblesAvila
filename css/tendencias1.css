@@ -1,0 +1,60 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Animación de entrada*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main{
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Retraso de 0.3 segundos antes de que comience la animación */
+}
+
+main h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    margin: 50px 50px;
+}
+
+main .container-img{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+main h4{
+    margin: 50px 50px;
+    font-size: 1.5em;
+}
+main p{
+    margin: 50px 50px;
+}
+
+main{
+    margin-bottom: 7em;
+}
+
+.container-img img{
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.cuerpo img{
+    margin-left: 50px;
+    width: 400px;
+    height: 200px;
+}
