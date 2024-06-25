@@ -1,0 +1,221 @@
+/*Animación de entrada*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main{
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Retraso de 0.3 segundos antes de que comience la animación */
+}
+
+.titulo{
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo h1{
+    font-size: 3em;
+    margin: 0;
+    margin-top: 70px;
+}
+
+.titulo h2{
+    font-size: 1.3em;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(114, 55, 15);
+    margin-top: 0.7em;
+}
+
+
+
+
+.Joshua-Card {
+    padding-top: 80px;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+}
+
+.Joshua-Card .container{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 50px;
+    justify-content: space-evenly;
+    background-color: rgb(255, 243, 233);
+}
+
+.Joshua-Card img{
+    width: 350px;
+    height: 500px;
+    padding-left: 150px;
+    padding-right: 70px;
+}
+
+.Joshua-Card h1{
+    font-size: 40px;
+    transition: all 400ms ease;
+}
+
+.Joshua-Card h1:hover{
+    font-size: 41px;
+    transition: all 400ms ease;
+}
+
+.Joshua-Card h2{
+    font-size: 30px;
+    transition: all 400ms ease;
+    color: rgb(114, 55, 15);
+}
+
+.Joshua-Card h2:hover{
+    transition: all 400ms ease;
+    font-size: 31px;
+}
+
+.Joshua-Card ul{
+    list-style-type: none;
+    transition: all 400ms ease;
+    padding-bottom: 27px;
+    border-bottom: 1px solid black;
+}
+
+.Joshua-Card ul:hover{
+    transition: all 400ms ease;
+    font-size: 17px;
+}
+
+.Joshua-Card h5{
+    font-weight: normal;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid black;
+}
+
+.Joshua-Card .redes{
+    display: flex;
+    flex-direction: row;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.Joshua-Card .redes img{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    padding-right: 20px;
+    transition: all 400ms ease;
+}
+
+.Joshua-Card .redes img:hover{
+    width: 48px;
+    height: 48px;
+    transition: all 400ms ease;
+}
+
+
+
+
+
+.Mario-Card {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    padding-bottom: 250px;
+}
+
+.Mario-Card .container{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 50px;
+    justify-content: space-evenly;
+    background-color: rgb(114, 55, 15);
+}
+
+.Mario-Card img{
+    width: 350px;
+    height: 500px;
+    padding-left: 150px;
+    padding-right: 70px;
+}
+
+.Mario-Card h1{
+    font-size: 40px;
+    transition: all 400ms ease;
+    color: white;
+}
+
+.Mario-Card h1:hover{
+    font-size: 41px;
+    transition: all 400ms ease;
+}
+
+.Mario-Card h2{
+    font-size: 30px;
+    transition: all 400ms ease;
+    color: rgb(214, 212, 160);
+}
+
+.Mario-Card h2:hover{
+    transition: all 400ms ease;
+    font-size: 31px;
+}
+
+.Mario-Card ul{
+    list-style-type: none;
+    transition: all 400ms ease;
+    padding-bottom: 27px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.Mario-Card ul:hover{
+    transition: all 400ms ease;
+    font-size: 17px;
+}
+
+.Mario-Card h5{
+    font-weight: normal;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.Mario-Card .redes{
+    display: flex;
+    flex-direction: row;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.Mario-Card .container h4{
+    color: white;
+}
+
+.Mario-Card .redes img{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    padding-right: 20px;
+    transition: all 400ms ease;
+}
+
+.Mario-Card .redes img:hover{
+    width: 48px;
+    height: 48px;
+    transition: all 400ms ease;
+}
