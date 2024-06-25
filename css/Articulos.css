@@ -1,0 +1,76 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Animación de entrada*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main{
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Retraso de 0.3 segundos antes de que comience la animación */
+}
+
+main h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+}
+
+main .container-img{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+main h4{
+    margin: 20px 30px;
+    font-size: 1.5em;
+}
+
+main p{
+    margin: 20px 50px;
+}
+
+main{
+    margin-bottom: 7em;
+}
+
+.image img{
+   width: 40%;
+}
+.colour{
+    color: rgb(114, 55, 15);
+}
+
+/*Para el segundo artículo de tips*/
+.container-Art{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-imgTips img{
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.container-imgTips{
+    width: 90%;
+}
+
+.introduction{
+    margin-top: 0;
+}
