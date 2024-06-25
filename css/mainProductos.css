@@ -22,7 +22,7 @@ main{
     animation-delay: 0.3s; /* Retraso de 0.3 segundos antes de que comience la animación */
 }
 
- h1{
+ main h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     text-align: center;
