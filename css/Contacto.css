@@ -1,0 +1,349 @@
+/*Animación de entrada*/
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+main{
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s; /* Retraso de 0.3 segundos antes de que comience la animación */
+}
+.conteiner-info{
+    display: flex;
+}
+
+.imagen{
+    padding-top: 50px;
+    padding-left: 150px;
+}
+
+.imagen img{
+    width: 550px;
+    height: 80%;
+    justify-content: end;
+}
+
+.informacion{
+    padding-left: 100px;
+    padding-top: 50px;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../Images/fondo-Contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.informacion iframe{
+    padding: 6px;
+    margin-bottom: 120px;
+    margin-top: 50px;
+    border-radius: 2px solid white;
+    background-color: #fff;
+}
+
+.informacion h1{
+    font-size: 35px;
+}
+
+.informacion h3{
+    color: rgb(214, 212, 160)
+}
+
+.informacion a{
+    text-decoration: none;
+}
+
+.formulario{
+    padding-left: 100px;
+    padding-top: 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+}
+
+.formulario h1{
+    font-size: 35px;
+}
+
+.formulario .input-nombre{
+    position: relative;
+    padding: 20px 1px;
+}
+
+.formulario .input-nombre input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(114, 55, 15);
+    background: transparent;
+    color: black;
+    outline: none;
+}
+
+.formulario .input-nombre label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(114, 55, 15);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.formulario .input-nombre > input:focus + label,
+.formulario .input-nombre > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+}
+
+/**/
+.formulario .input-identificacion{
+    position: relative;
+    padding: 20px 1px;
+}
+
+.formulario .input-identificacion input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(114, 55, 15);
+    background: transparent;
+    color: black;
+    outline: none;
+}
+
+.formulario .input-identificacion label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(114, 55, 15);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.formulario .input-identificacion > input:focus + label,
+.formulario .input-identificacion > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+}
+
+/**/
+.formulario .input-correo{
+    position: relative;
+    padding: 20px 1px;
+}
+
+.formulario .input-correo input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(114, 55, 15);
+    background: transparent;
+    color: black;
+    outline: none;
+}
+
+.formulario .input-correo label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(114, 55, 15);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.formulario .input-correo > input:focus + label,
+.formulario .input-correo > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+}
+
+/**/
+.formulario .input-mensaje{
+    position: relative;
+    padding: 20px 1px;
+}
+
+.formulario .input-mensaje input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(114, 55, 15);
+    background: transparent;
+    color: black;
+    outline: none;
+}
+
+.formulario .input-mensaje label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(114, 55, 15);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.formulario .input-mensaje > input:focus + label,
+.formulario .input-mensaje > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+}
+
+/*Genero*/
+
+:focus {
+    outline: 0;
+    border-color: rgb(114, 55, 15);
+    box-shadow: 0 0 0 4px rgb(235, 220, 210);
+  }
+  
+  .genero div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+  
+  .genero input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .genero input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em rgb(114, 55, 15);
+    background-color: rgb(214, 212, 160);
+    z-index: 1;
+    color: rgb(114, 55, 15);
+  }
+  
+  label span {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.375em .75em;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em rgb(214, 212, 160);
+    letter-spacing: .05em;
+    color: rgb(114, 55, 15);
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+  
+  label:first-child span {
+    border-radius: .375em 0 0 .375em;
+  }
+  
+  label:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+
+  /*Edad*/
+  .number-quantity {
+    -moz-appearance: textfield;
+    width: 150px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(114, 55, 15);
+    background: transparent;
+    color: black;
+    outline: none;
+  }
+
+  .edad{
+    padding-bottom: 40px;
+  }
+
+  .edad h3{
+    color: rgb(114, 55, 15);
+  }
+  
+
+  /* Botones */
+  button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: white;
+    --button_outline_color: rgb(114, 55, 15);
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+
+  .botones{
+    padding-bottom: 70px;
+  }
